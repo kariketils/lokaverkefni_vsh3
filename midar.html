@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="is">
+	<head>
+		<!--   <link href='https://fonts.googleapis.com/css?family=Vidaloka' rel='stylesheet' type='text/css'>           -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="myndir/USAHicon64.png" type="image/x-icon">
+		<title>Lokaverkefni</title>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+
+	<body class="skrasida">
+		<div class="banner">
+		<img class="toplogo" src="myndir/logo-experience-hendrix.png">
+		<h1>Jimi<br>Hendrix</h1>
+
+		</div>
+		<header>
+			<h4>Skráningarsíða tónleikana</h4>
+			<p>Hérna getur þú skráð þig undir þitt eigið valið svæði<br>
+			Lokað verður á skráningu viku fyrir leikana eða þegar öll svæði eru full<br>
+			Athugið að það er ennþá hægt að mæta og horfa á en ekki í fráteknum svæðum</p>
+		</header>
+		<section id="loginBox">
+			<form action="skraning.php" method="get" class="minimal">
+				<h4>Skráning</H4>
+				<label for="fullname">
+				Fullt nafn:
+				<input type="text" name="fullname" id="fullname" placeholder="Jón Jónsson" pattern="^([ \u00c0-\u01ffa-zA-Z'\-])+$" required="required" />
+			</label>
+
+			<label for="aldur">
+				Fæðingarár (4 tölustafir):
+				<input type="text" name="aldur" id="aldur" placeholder="1995" pattern="(19[23456789]\d|20[01]\d)" required="required" />
+			</label>
+			
+			<label for="simi">
+				Sími (xxx-xxxx):
+				<input type="text" name="simi" id="simi" placeholder="555-5555" pattern="(\d{3}[\-]\d{4})" required="required" />
+			</label>
+
+			<label for="emil">
+				Email:
+				<input type="email" name="emil" id="emil" placeholder="hamar@stedji.is" required="required"/>
+			</label>
+		
+	<div class="greinar-skraning">
+		<h4>Svæði</h4>
+		<p>veljið ykkar svæði</p>
+
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="A1" value="75">A1</label>
+	</div>
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="A2" value="75">A2</label>
+	</div>
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="B1" value="100">B1</label>
+	</div>
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="B2" value="100">B2</label>
+ 	</div>
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="B3" value="125">B3</label>
+	</div>
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="C1" value="75">C1</label>
+	</div>
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="C2" value="50">C2</label>
+	</div>
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="D1" value="225">D1</label>
+	</div>
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="D2" value="300">D2</label>
+	</div>
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="D3" value="300">D3</label>
+	</div>
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="D4" value="500">D4</label>
+	</div>
+	<h5>Sjálfboðaliði</h5>
+	<p>Sjálfboðaliðar hakið í hér:</p>
+	<div class="stada">
+		<label><input class="svaedi" type="checkbox" name="sjalfbodalidi" value="sjalfbodalidi"> Sjálfboðaliði</label>
+	</div>
+	</div>
+	<button type="submit" class="btn-minimal">Skrá</button>
+	</form>
+		</section>
+		<footer>
+		<nav class="fotur">
+			<a href="https://en.wikipedia.org/wiki/A%26M_Records" target="_blank">
+				<img class="samband" src="myndir/A&M_Records_logo.jpg">
+				
+			</a>
+			<a href="https://www.facebook.com/borginrestaurant/" target="_blank">
+				<img class="samband" src="myndir/borginRest.jpg">
+				
+			</a>
+			<a href="http://www.kexhostel.is/" target="_blank">
+				<img class="samband" src="myndir/kex.jpg">
+				</img>
+			</a>
+			<a href="https://www.warnerbros.com/" target="_blank">
+				<img class="samband" src="myndir/WB.jpg">
+				
+			</a>
+		</nav>
+		<p>Hringbraut 48, Hafnarfirði<br> Pósthólf 20, 220 Hafnarfjörður.<br> Sími: 888-2314.<br> Tölvupóstur:<a href="mailto:kari.ketils@gmail.com">  kari.ketils@gmail.com</a></p>
+		<p class="facts">Öllum staðreyndum á þessari síðu skal taka með miklum fyrirvara þar sem farið er MJÖG frjálslega með staðreyndir.<br>
+			vefsíða var gerð á vorönn 2017 í vefsíðunnar áfanga númer</p>
+	</footer>
+
+	</body>
